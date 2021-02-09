@@ -20,11 +20,13 @@ Plug 'smbl64/vim-black-macchiato'
 
 ## Features
 
-You can use the `BlackMacchiato` command in normal mode to run `black-macchiato` on current line, or in visual mode to run it on the selection.
+You can use the `:BlackMacchiato` command in normal mode to run `black-macchiato` on the current line, or in visual mode to run it on the selected lines.
 
 ### Keybindings 
 
-Put these in your `.vimrc` file:
+By default no keyboard shortcut is provided. You can use `<plug>(BlackMacchiatoSelection)` and `<plug>(BlackMacchiatoCurrentLine)` to define custom keyboard shortcuts.
+
+For example, put these in your `.vimrc` file:
 
 ```
 autocmd FileType python xmap <buffer> <Leader>f <plug>(BlackMacchiatoSelection)
