@@ -29,7 +29,6 @@ Put these in your `.vimrc` file:
 ```
 autocmd FileType python xmap <buffer> <Leader>f <plug>(BlackMacchiatoSelection)
 autocmd FileType python nmap <buffer> <Leader>f <plug>(BlackMacchiatoCurrentLine)
-
 ```
 
 ## Settings
