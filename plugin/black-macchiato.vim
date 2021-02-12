@@ -1,7 +1,6 @@
 let g:black_macchiato_path = "black-macchiato"
 
 function s:RunBlackMacchiato() range
-    "let cmd = "black-macchiato"
     let cmd = g:black_macchiato_path
     if !executable(cmd)
         echohl ErrorMsg
