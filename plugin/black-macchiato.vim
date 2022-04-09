@@ -1,7 +1,5 @@
-let g:black_macchiato_path = "black-macchiato"
-
 function s:RunBlackMacchiato() range
-    let cmd = g:black_macchiato_path
+    let cmd = get(g:, "black_macchiato_path", "black-macchiato")
     if !executable(cmd)
         echohl ErrorMsg
         echom "black-macchiato not found!"
