@@ -1,18 +1,16 @@
 # vim-black-macchiato
 
-## Description
-
-This is a Vim plugin that provides integration with [black-macchiato][bm-url], which is a partial formatter for Python.
+This plugin provides integration with [black-macchiato][bm-url] which is a partial code formatter for Python.
 
 ## Installation
 
-### Vundle
+**Vundle:**
 
 ```
 Plugin 'smbl64/vim-black-macchiato'
 ```
 
-## vim-plug
+**vim-plug:**
 
 ```
 Plug 'smbl64/vim-black-macchiato'
