@@ -1,5 +1,6 @@
 function s:RunBlackMacchiato() range
     let cmd = get(g:, "black_macchiato_path", "black-macchiato")
+    let args = get(g:, "black_macchiato_args", "")
     if !executable(cmd)
         echohl ErrorMsg
         echom "black-macchiato not found!"
@@ -7,7 +8,7 @@ function s:RunBlackMacchiato() range
         return
     endif
 
-    silent execute a:firstline . "," . a:lastline . "!" . cmd
+    silent execute a:firstline . "," . a:lastline . "!" . cmd args
 
     echo "Done formatting."
 

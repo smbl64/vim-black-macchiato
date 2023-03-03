@@ -39,5 +39,13 @@ Set this to your `black-macchiato` installation path.
 
 Default: `"black-macchiato"`
 
+### The `g:black_macchiato_args` option
+
+Set this to additional argumens you want to pass to `black-macchiato`.  For
+example you can set it to `"-S -l100"` to ask `black` to skip string
+normalization and use a longer line length.
+
+Default: `""`
+
 [bm-url]: https://github.com/wbolster/black-macchiato
 
