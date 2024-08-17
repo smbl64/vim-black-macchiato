@@ -17,5 +17,5 @@ endfunction
 " Create a command to call the black-macchiato function
 command -range BlackMacchiato <line1>,<line2>call <sid>RunBlackMacchiato()
 
-xnoremap <plug>(BlackMacchiatoSelection) :'<,'>BlackMacchiato<cr>
+xnoremap <plug>(BlackMacchiatoSelection) :BlackMacchiato<cr>
 nnoremap <plug>(BlackMacchiatoCurrentLine) :BlackMacchiato<cr>
